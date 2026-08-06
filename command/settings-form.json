@@ -1,0 +1,15 @@
+{
+    "form":{
+        "sample-input":{
+            "label":"Sample Input",
+            "type":"text",
+            "description":"Any input type from HTML is supported here",
+            "options":{
+                "unused":"Put any props you would put in an HTML input here like min and max for ranges. For text, add json-friendly if you want to make sure the input text to be safe for json storage like key names"
+            }
+        }
+    },
+    "defaults":{
+        "sample-input":"Defaults are essential for filling in null values. Notice that subforms can't have a default key name or asset."
+    }
+}

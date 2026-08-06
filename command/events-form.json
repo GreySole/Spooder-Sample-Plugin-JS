@@ -1,0 +1,10 @@
+{
+  "show_alert": {
+    "label": "Sample Event",
+    "form": {
+      
+    },
+    "defaults": {
+    }
+  }
+}
