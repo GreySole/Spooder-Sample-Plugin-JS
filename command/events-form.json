@@ -1,10 +1,46 @@
 {
   "show_alert": {
-    "label": "Sample Event",
+    "label": "Show Alert",
+    "nodeWidth": 300,
     "form": {
-      
+      "message": {
+        "label": "Message",
+        "type": "text",
+        "description": "Every field is also a wireable input on the node. Unwired, it holds the value typed here."
+      },
+      "duration": {
+        "label": "Duration (s)",
+        "type": "number"
+      },
+      "style": {
+        "label": "Style",
+        "type": "select",
+        "options": {
+          "selections": {
+            "info": "Info",
+            "warning": "Warning"
+          }
+        }
+      },
+      "icon": {
+        "label": "Icon",
+        "type": "asset",
+        "options": {
+          "assetType": "image",
+          "folder": "image"
+        },
+        "showif": {
+          "variable": "style",
+          "condition": "equals",
+          "value": "info"
+        }
+      }
     },
     "defaults": {
+      "message": "Hello from the sample plugin!",
+      "duration": 5,
+      "style": "info",
+      "icon": ""
     }
   }
 }
